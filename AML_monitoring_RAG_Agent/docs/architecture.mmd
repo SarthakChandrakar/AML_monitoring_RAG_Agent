@@ -1,0 +1,24 @@
+flowchart TD
+    User([👤 Analyst / Compliance Officer]) --> UI[🛡️ Streamlit Dashboard]
+    UI --> Ret[🔍 AML Retriever]
+    Ret --> FAISS[(⚡ FAISS Vector Index)]
+    
+    subgraph DataLayer [📚 Knowledge & Data Corpus]
+        KB[JSON AML Knowledge Base]
+        Trans[IBM AML Transactions]
+        Rules[AML Red Flag Rules]
+        FATF[FATF Guidelines PDF]
+    end
+
+    FAISS --> DataLayer
+    DataLayer --> RiskEngine[⚙️ Rule-Based Risk Engine]
+    RiskEngine --> ExplainGen[📝 Analyst Explanation Generator / LLM]
+    ExplainGen --> Report[📄 Final AML Investigation Report]
+
+    style User fill:#16223A,stroke:#4C8DFF,stroke-width:2px,color:#E6EDF7
+    style UI fill:#111A2B,stroke:#4C8DFF,stroke-width:2px,color:#E6EDF7
+    style Ret fill:#16223A,stroke:#2FBF71,stroke-width:2px,color:#E6EDF7
+    style FAISS fill:#1C2942,stroke:#E8B931,stroke-width:2px,color:#E6EDF7
+    style RiskEngine fill:#261828,stroke:#FF7A45,stroke-width:2px,color:#E6EDF7
+    style ExplainGen fill:#111A2B,stroke:#4C8DFF,stroke-width:2px,color:#E6EDF7
+    style Report fill:#0D1524,stroke:#2FBF71,stroke-width:2px,color:#E6EDF7

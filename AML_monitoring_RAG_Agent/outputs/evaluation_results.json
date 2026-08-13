@@ -1,0 +1,62 @@
+{
+  "evaluation_summary": {
+    "top_k": 5,
+    "total_eval_queries": 5,
+    "avg_retrieval_time_ms": 46.68,
+    "precision_at_k": 0.48,
+    "recall_at_k": 0.48,
+    "mrr": 0.8,
+    "hit_rate": 0.8,
+    "groundedness_heuristic": 0.1521,
+    "faithfulness_heuristic": 0.95,
+    "embedding_model": "all-MiniLM-L6-v2",
+    "vector_index": "FAISS IndexFlatL2"
+  },
+  "query_details": [
+    {
+      "query": "What are the red flags for structuring in cash deposits?",
+      "retrieval_time_ms": 148.32,
+      "precision_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "mrr": 1.0,
+      "hit": 1,
+      "retrieved_count": 5
+    },
+    {
+      "query": "How is cryptocurrency and bitcoin used in money laundering?",
+      "retrieval_time_ms": 24.51,
+      "precision_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "mrr": 0.0,
+      "hit": 0,
+      "retrieved_count": 5
+    },
+    {
+      "query": "What indicators suggest high risk wire transfers across offshore shell companies?",
+      "retrieval_time_ms": 20.18,
+      "precision_at_k": 0.2,
+      "recall_at_k": 0.2,
+      "mrr": 1.0,
+      "hit": 1,
+      "retrieved_count": 5
+    },
+    {
+      "query": "When should a Suspicious Activity Report (SAR) be filed for smurfing?",
+      "retrieval_time_ms": 20.71,
+      "precision_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "mrr": 1.0,
+      "hit": 1,
+      "retrieved_count": 5
+    },
+    {
+      "query": "What are common layering techniques in trade-based money laundering?",
+      "retrieval_time_ms": 19.66,
+      "precision_at_k": 0.2,
+      "recall_at_k": 0.2,
+      "mrr": 1.0,
+      "hit": 1,
+      "retrieved_count": 5
+    }
+  ]
+}
